@@ -1,4 +1,5 @@
 {
+  "homepage" : "https://pathustler.github.io/profile/",
   "name": "profile",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && echo 'https://pathustler.github.io/profile/' > out/CNAME && npx gh-pages -d out"
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "deploya": "next build && next export && echo 'https://pathustler.github.io/profile/' > out/CNAME && npx gh-pages -d out"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -20,5 +23,8 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
