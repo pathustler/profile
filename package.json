@@ -8,8 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out",
+    "postdeploy": "rm -rf out"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
