@@ -11,6 +11,7 @@
     "predeploy": "next build",
     "deploy": "gh-pages -d out",
     "postdeploy": "rm -rf out"
+  
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
