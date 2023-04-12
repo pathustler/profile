@@ -220,7 +220,7 @@ export default function Home() {
         <div className="glass-card">
           <div className="glass-card-content">
             <h2 className="glass-card-title"><code>Patrick Schwarz</code></h2>
-            <p className="glass-card-description"><code>Skills: Many</code></p>
+            <p className="glass-card-description"><code>Skills: AI Development</code></p>
             <button className="glass-card-button">Learn More</button>
           </div>
         </div>
